@@ -1,0 +1,152 @@
+//Take two numbers as input and print larger number .
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int numb1,numb2;
+    cout<<"Enter both number ";
+    cin>>numb1>>numb2;
+    if(numb1>numb2){
+        cout<<"numb1 is larger ";
+    }
+    else{
+        cout<<"numb2 is larger ";
+    }
+    return 0;
+}
+//Take a number as input and determine whether it is even or odd.
+#include<iostream>
+using namespace std;
+
+int main() {
+    int number;
+    cout<<"Enter the number : ";
+    cin>>number;
+    if(number%2==0){
+        cout<<"The given number is even ";
+    }
+    else{
+        cout<<"The given number is odd ";
+    }
+
+    return 0;
+}
+//take number as an input determine whether it is positive, negative or zero
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int number;
+    cout<<"Enter the number : ";
+    cin>>number;
+    if(number==0){
+        cout<<"The Given number is zer0 ";
+    }
+    else if(number<0){
+        cout<<"The Given number is Negative ";
+    }
+    else{
+        cout<<"The Given number is P0sitive ";
+    }
+    
+    
+    return 0;
+}
+//Take year as an input and determine whether it is leap year
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int year;
+    cout<<"Enter the year : ";
+    cin>>year;
+    if(year%4==0 && year%400 || year%100!=00){
+        cout<<year<<" is leap year"<<endl;
+    }
+    else{
+        cout<<year<<" is not a leap year ";
+    }
+    return 0;
+}
+
+//take units of electricity consumed as input and calculate the total electricity bill according to the given condition
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int units, bill;
+
+    cout << "Enter the number of electricity units consumed: ";
+    cin >> units;
+
+    if (units >= 0 && units < 100) {
+        bill = units * 4;
+    }
+    else if (units >= 100 && units < 200) {
+        bill = units * 5;
+    }
+    else if (units >= 200 && units < 300) {
+        bill = units * 6;
+    }
+    else if (units >= 300 && units < 400) {
+        bill = units * 7;
+    }
+    else if (units >= 400 && units < 500) {
+        bill = units * 8;
+    }
+    else if (units >= 500) {
+        bill = units * 13;
+    }
+    else {
+        cout << "Invalid input. The number of units cannot be negative." << endl;
+        return 0;
+    }
+
+    cout << "Your total electricity bill is Rs. " << bill << endl;
+
+    return 0;
+}
+
+//Take character as input and check whether it is a vowel or consonant(using switch)
+#include<iostream>
+using namespace std;
+
+int main() {
+    char ch;
+    cout<<"Enter the character : ";
+    cin>>ch;
+    switch(ch){
+
+    case 'a': {
+        cout<<ch<<" is Vowel "<<endl;
+        break;
+    }
+    case 'e': {
+        cout<<ch<<" is Vowel "<<endl;
+        break;
+    }
+    case 'i': {
+        cout<<ch<<" is Vowel "<<endl;
+        break;
+    }
+    case 'o': {
+        cout<<ch<<" is Vowel "<<endl;
+        break;
+    }
+    case 'u': {
+        cout<<ch<<" is Vowel "<<endl;
+        break;
+    }
+    default:{
+        cout<<ch<<" is Consonant "<<endl;
+        break;
+    }
+    }
+    
+    return 0;
+}
+
